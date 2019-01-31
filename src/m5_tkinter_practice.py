@@ -16,7 +16,8 @@ def main():
     # TODO: 2. After reading and understanding the m1e module,
     #   ** make a window that shows up. **
     # -------------------------------------------------------------------------
-
+    root = tkinter.Tk()
+    root.mainloop()
     # -------------------------------------------------------------------------
     # TODO: 3. After reading and understanding the m2e module,
     #   ** put a Frame on the window. **
