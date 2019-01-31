@@ -19,7 +19,7 @@ def main():
     # -------------------------------------------------------------------------
     root = tkinter.Tk()
     # -------------------------------------------------------------------------
-    # TODO: 3. After reading and understanding the m2e module,
+    # DONE: 3. After reading and understanding the m2e module,
     #   ** put a Frame on the window. **
     # -------------------------------------------------------------------------
 
@@ -27,18 +27,18 @@ def main():
     frame1.grid()
 
     # -------------------------------------------------------------------------
-    # TODO: 4. After reading and understanding the m2e module,
+    # DONE: 4. After reading and understanding the m2e module,
     #   ** put a Button on the Frame. **
     # -------------------------------------------------------------------------
 
     print_hello_button = ttk.Button(frame1, text='Print Hello')
 
     # -------------------------------------------------------------------------
-    # TODO: 5. After reading and understanding the m3e module,
+    # DONE: 5. After reading and understanding the m3e module,
     #   ** make your Button respond to a button-press **
     #   ** by printing   "Hello"  on the Console.     **
     # -------------------------------------------------------------------------
-    print_hello_button['command'] = (lambda:print_hello())
+    print_hello_button['command'] = (lambda: print('Hello'))
     print_hello_button.grid()
 
 
@@ -80,8 +80,7 @@ def main():
     # -------------------------------------------------------------------------
 
     root.mainloop()
-def print_hello():
-        print('Hello')
+
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
