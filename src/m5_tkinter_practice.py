@@ -22,7 +22,15 @@ def main():
     # TODO: 3. After reading and understanding the m2e module,
     #   ** put a Frame on the window. **
     # -------------------------------------------------------------------------
+    root = tkinter.Tk()
 
+    frame1 = ttk.Frame(root, padding=10)
+    frame1.grid()
+
+    go_forward_button = ttk.Button(frame1, text='Forward')
+    go_forward_button.grid()
+
+    root.mainloop()
     # -------------------------------------------------------------------------
     # TODO: 4. After reading and understanding the m2e module,
     #   ** put a Button on the Frame. **
