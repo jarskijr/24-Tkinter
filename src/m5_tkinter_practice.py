@@ -8,6 +8,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 
 import tkinter
 from tkinter import ttk
+import random
 
 
 def main():
@@ -17,30 +18,29 @@ def main():
     #   ** make a window that shows up. **
     # -------------------------------------------------------------------------
     root = tkinter.Tk()
-    root.mainloop()
     # -------------------------------------------------------------------------
     # TODO: 3. After reading and understanding the m2e module,
     #   ** put a Frame on the window. **
     # -------------------------------------------------------------------------
-    root = tkinter.Tk()
 
     frame1 = ttk.Frame(root, padding=10)
     frame1.grid()
 
-    go_forward_button = ttk.Button(frame1, text='Forward')
-    go_forward_button.grid()
-
-    root.mainloop()
     # -------------------------------------------------------------------------
     # TODO: 4. After reading and understanding the m2e module,
     #   ** put a Button on the Frame. **
     # -------------------------------------------------------------------------
+
+    print_hello_button = ttk.Button(frame1, text='Print Hello')
 
     # -------------------------------------------------------------------------
     # TODO: 5. After reading and understanding the m3e module,
     #   ** make your Button respond to a button-press **
     #   ** by printing   "Hello"  on the Console.     **
     # -------------------------------------------------------------------------
+    print_hello_button['command'] = (lambda:print_hello())
+    print_hello_button.grid()
+
 
     # -------------------------------------------------------------------------
     # TODO: 6. After reading and understanding the m4e module,
@@ -79,6 +79,9 @@ def main():
     # TODO: 8. As time permits, do other interesting GUI things!
     # -------------------------------------------------------------------------
 
+    root.mainloop()
+def print_hello():
+        print('Hello')
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
